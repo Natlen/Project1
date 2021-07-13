@@ -6,15 +6,4 @@ git remote add origin https://github.com/<USER_NAME>/<REPO_NAME> // sets origin 
 git commit -m "<MSG>" // commit al lchanges with the given messege
 git push -u origin <BRANCH_NAME> // pushes all changes to repo
 git fetch origin <BRANCH_NAME> // fetching the updated branch
-pull request :
-    git pull origin <BRANCH_FROM>> // pull from
-    git checkout <BRANCH_TO> // change to
-    git push origin <BRANCH_TO> // push to
-
-    git fetch origin
-    git checkout -b dev origin/dev
-    git merge nativ
-
-    git checkout nativ
-    git merge --no-ff dev
-    git push origin nativ
+git pull origin <BRANCH_NAME> // pulls changes to local
