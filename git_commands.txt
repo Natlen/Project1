@@ -2,14 +2,18 @@ git add . // adds all files
 git init 
 git checkout -b branch_name // create a branch if not exists 
 git checkout -b branch_name // switch between brances
-git remote -u origin https://github.com/<USER_NAME>/<REPO_NAME> // sets origin to the repo path
+git remote add origin https://github.com/<USER_NAME>/<REPO_NAME> // sets origin to the repo path
 git commit -m "<MSG>" // commit al lchanges with the given messege
 git push -u origin <BRANCH_NAME> // pushes all changes to repo
-
+git fetch // fetching the updated branch
 pull request :
+    git pull origin <BRANCH_FROM>> // pull from
+    git checkout <BRANCH_TO> // change to
+    git push origin <BRANCH_TO> // push to
+
     git fetch origin
     git checkout -b dev origin/dev
-    it merge nativ
+    git merge nativ
 
     git checkout nativ
     git merge --no-ff dev
