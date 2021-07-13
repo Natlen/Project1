@@ -7,3 +7,6 @@ git commit -m "<MSG>" // commit al lchanges with the given messege
 git push -u origin <BRANCH_NAME> // pushes all changes to repo
 git fetch origin <BRANCH_NAME> // fetching the updated branch
 git pull origin <BRANCH_NAME> // pulls changes to local
+-merge:
+    - git merge <BRANCH_TO>
+    - git pull <BRANCH_FROM>
