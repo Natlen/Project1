@@ -1,0 +1,7 @@
+git add . // adds all files
+git init 
+git checkout -b branch_name // create a branch if not exists 
+git checkout -b branch_name // switch between brances
+git remote -u origin https://github.com/<USER_NAME>/<REPO_NAME> // sets origin to the repo path
+git commit -m "<MSG>" // commit al lchanges with the given messege
+git push // pushes all changes to repo
