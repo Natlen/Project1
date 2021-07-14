@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.get('/', (req, res) => {
-    res.sendFile('../frontend/index.html')
+    res.send('main page')
 })
 app.use('/api', api);
 app.listen(port, () => {
