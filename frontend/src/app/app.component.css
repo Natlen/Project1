@@ -1,6 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+
+.nav-bar-row{
+    width: 100%;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #99AAB5; /*   #F6F6F6     */
+}
 .nav-bar-item{
     margin: 0 4px 0 4px; /* top right bottom left */
 }
