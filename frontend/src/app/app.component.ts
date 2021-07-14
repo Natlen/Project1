@@ -10,7 +10,6 @@ export class AppComponent {
 
   drop_down : boolean = false;
   dropDownMenu() : void {
-    console.log("");
-    this.drop_down == true ? false : true;
+    this.drop_down == true ? this.drop_down = false : this.drop_down = true;
   }
 }
