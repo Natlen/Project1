@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+
+  drop_down : boolean = false;
+  dropDownMenu() : void {
+    console.log("");
+    this.drop_down == true ? false : true;
+  }
 }
