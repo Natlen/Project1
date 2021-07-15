@@ -1,15 +1,3 @@
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.nav-bar-row{
-    width: 100%;
-    height: 32px;
-    margin: 0;
-    padding: 0;
-    background-color: #99AAB5; /*   #F6F6F6     */
-}
-.nav-bar-item{
-    margin: 0 4px 0 4px; /* top right bottom left */
+.nav-bar-menu-entries{
+    text-align: center;
 }
