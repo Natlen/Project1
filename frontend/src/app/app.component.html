@@ -1,15 +1,25 @@
-<div class="nav-bar-container" fxLayout.gt-xs fxLayoutAlign.gt-xs="space-between center" fxLayout.xs="column">
-  <div fxHide.gt-xs fxShow.xs fxFlexAlign.xs><mat-icon (click)="dropDownMenu()">menu</mat-icon></div>
-    <div class="nav-bar-menu-entries-m" fxShow.xs fxHide.gt-xs [hidden]="!drop_down">
-      <div class="menu-entry-m">HOME</div>
-      <div class="menu-entry-m seperator sperator-m"></div>
-      <div class="menu-entry-m">STUDENT</div>
-    </div>
-    <div class="nav-bar-menu-entries" fxLayoutAlign.gt-xs fxshow.gt-xs fxHide.xs>
-      <div class="menu-entry">HOME</div>
-      <div class="menu-entry seperator"></div>
-      <div class="menu-entry">STUDENT</div>
-    </div>
+<!-- HEADER -->
+<div class="container" style="min-height: 100%;">
+  <div class="nav-bar-container" fxLayout.gt-xs fxLayoutAlign.gt-xs="space-between center" fxLayout.xs="column">
+    <div fxHide.gt-xs fxShow.xs fxFlexAlign.xs><mat-icon (click)="dropDownMenu()">menu</mat-icon></div>
+      <div class="nav-bar-menu-entries-m" fxShow.xs fxHide.gt-xs [hidden]="!drop_down">
+        <div class="menu-entry-m" mat-button><a [routerLink]="['/home']">HOME</a></div>
+        <div class="menu-entry-m seperator sperator-m"></div>
+        <div class="menu-entry-m"><a [routerLink]="['/student']">STUDENT</a></div>
+      </div>
+      <div class="nav-bar-menu-entries" fxLayoutAlign.gt-xs fxshow.gt-xs fxHide.xs>
+        <div class="menu-entry"><a [routerLink]="['/']" class="mat-focus-indicator mat-button mat-button-base">HOME</a></div>
+        <div class="menu-entry seperator sperator"></div>
+        <div class="menu-entry"><a [routerLink]="['/student']">STUDENT</a></div>
+      </div>
+  </div>
+  <!-- BODY - COMPONENTS CONTAINER -->
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>
+<!-- FOOTER -->
+<div class="footer-container" fxLayout fxLayoutAlign="center center">
+  <a href="https://github.com/Natlen"><img src="../assets/images/github_icon.png" style="padding-top: 4px;"></a>
+  <a href="https://linkedin.com/in/nat-len" target="blank"><img src="../assets/images/linkedin_icon.png"></a>
+  <a href="mailto:nativlengel11@gmail.com"><img src="../assets/images/email_icon.png"style="padding-top: 8px;"></a>
+  <a href="https://discord.gg/Jkn2e4mBzD"><img src="../assets/images/discord_icon.png"style="padding-top: 8px;"></a>
+</div>

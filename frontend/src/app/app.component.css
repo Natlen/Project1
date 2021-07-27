@@ -1,6 +1,11 @@
+a{
+    text-decoration: none;
+    color: #FEFEFE;
+}
 .nav-bar-container{
     background-color: #2C2F33;
     color: #FEFEFE;
+    padding: 8px 4px;
 }
 .nav-bar-menu-entries-m{
     text-align: center;
@@ -31,4 +36,15 @@
 .seperator{
     padding: 1px;
     background: linear-gradient(to top, #6600cc 0%, #00ffff 100%);
+}
+.footer-container{
+    position: relative;
+    bottom: 0;
+    background-color: #2C2F33;
+    color: #FEFEFE;
+}
+.footer-container > a > img {
+    width: 26px;
+    height: 26px;
+    margin: 4px 16px 4px 16px;
 }
