@@ -1,12 +1,14 @@
 <div class="nav-bar-container" fxLayout.gt-xs fxLayoutAlign.gt-xs="space-between center" fxLayout.xs="column">
   <div fxHide.gt-xs fxShow.xs fxFlexAlign.xs><mat-icon (click)="dropDownMenu()">menu</mat-icon></div>
-    <div class="nav-bar-menu-entries" fxShow.xs fxHide.gt-xs [hidden]="!drop_down">
-      <div>HOME</div>
-      <div>STUDENT</div>
+    <div class="nav-bar-menu-entries-m" fxShow.xs fxHide.gt-xs [hidden]="!drop_down">
+      <div class="menu-entry-m">HOME</div>
+      <div class="menu-entry-m seperator sperator-m"></div>
+      <div class="menu-entry-m">STUDENT</div>
     </div>
-    <div class="nav-bar-menu-entries" fxLayoutAlign.gt-xs fxLayoutGap.gt-xs="16px" fxshow.gt-xs fxHide.xs>
-      <div>HOME</div>
-      <div>STUDENT</div>
+    <div class="nav-bar-menu-entries" fxLayoutAlign.gt-xs fxshow.gt-xs fxHide.xs>
+      <div class="menu-entry">HOME</div>
+      <div class="menu-entry seperator"></div>
+      <div class="menu-entry">STUDENT</div>
     </div>
 </div>
 
